@@ -1,0 +1,77 @@
+/* ========== 基础重置 ========== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", sans-serif;
+  color: #1a1a2e; background: #f8f9fa; line-height: 1.8; font-size: 16px;
+}
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { max-width: 100%; height: auto; }
+
+/* ========== 头部 ========== */
+header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  color: #fff; padding: 60px 20px 40px; text-align: center;
+}
+header h1 { font-size: 2.4em; font-weight: 700; letter-spacing: 1px; }
+header h1 a { color: #fff; }
+header h1 a:hover { text-decoration: none; }
+header p { margin-top: 8px; opacity: 0.85; font-size: 1.05em; }
+nav { margin-top: 20px; }
+nav a {
+  color: rgba(255,255,255,0.85); margin: 0 14px; font-size: 0.95em;
+  padding: 4px 0; border-bottom: 2px solid transparent; transition: 0.2s;
+}
+nav a:hover { border-bottom-color: #64ffda; color: #fff; text-decoration: none; }
+
+/* ========== 主内容 ========== */
+.container { max-width: 780px; margin: 0 auto; padding: 40px 20px 80px; }
+
+/* ========== 文章卡片 ========== */
+.post-list { list-style: none; }
+.post-item {
+  background: #fff; border-radius: 10px; padding: 28px 32px; margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06); transition: 0.2s;
+}
+.post-item:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); transform: translateY(-1px); }
+.post-item .date {
+  font-size: 0.85em; color: #6b7280; margin-bottom: 6px;
+}
+.post-item h2 { font-size: 1.3em; margin-bottom: 8px; }
+.post-item h2 a { color: #1a1a2e; }
+.post-item h2 a:hover { color: #2563eb; text-decoration: none; }
+.post-item .summary { color: #4b5563; font-size: 0.95em; }
+
+/* ========== 文章详情页 ========== */
+article { background: #fff; border-radius: 10px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+article h1 { font-size: 1.8em; margin-bottom: 8px; }
+article .meta { color: #6b7280; font-size: 0.9em; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid #e5e7eb; }
+article p { margin-bottom: 1.2em; }
+article h2 { font-size: 1.35em; margin: 1.5em 0 0.5em; }
+article h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; }
+article ul, article ol { margin-bottom: 1.2em; padding-left: 1.5em; }
+article li { margin-bottom: 0.3em; }
+article blockquote {
+  border-left: 4px solid #2563eb; padding: 12px 20px; margin: 1.2em 0;
+  background: #f0f4ff; border-radius: 0 8px 8px 0;
+}
+article hr { border: none; border-top: 1px solid #e5e7eb; margin: 2em 0; }
+
+/* ========== 关于页面 ========== */
+.about-section { background: #fff; border-radius: 10px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+.about-section h1 { font-size: 1.8em; margin-bottom: 20px; }
+.about-section p { margin-bottom: 1em; }
+
+/* ========== 页脚 ========== */
+footer {
+  text-align: center; padding: 30px 20px; color: #6b7280;
+  font-size: 0.85em; border-top: 1px solid #e5e7eb;
+}
+
+/* ========== 响应式 ========== */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.6em; }
+  .post-item { padding: 20px; }
+  article { padding: 24px; }
+}
