@@ -1,77 +1,351 @@
-/* ========== 基础重置 ========== */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+﻿/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", sans-serif;
-  color: #1a1a2e; background: #f8f9fa; line-height: 1.8; font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f5f5f5;
 }
-a { color: #2563eb; text-decoration: none; }
-a:hover { text-decoration: underline; }
-img { max-width: 100%; height: auto; }
 
-/* ========== 头部 ========== */
+/* 容器 */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 头部 */
 header {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-  color: #fff; padding: 60px 20px 40px; text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
 }
-header h1 { font-size: 2.4em; font-weight: 700; letter-spacing: 1px; }
-header h1 a { color: #fff; }
-header h1 a:hover { text-decoration: none; }
-header p { margin-top: 8px; opacity: 0.85; font-size: 1.05em; }
-nav { margin-top: 20px; }
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+/* 导航 */
+nav {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
 nav a {
-  color: rgba(255,255,255,0.85); margin: 0 14px; font-size: 0.95em;
-  padding: 4px 0; border-bottom: 2px solid transparent; transition: 0.2s;
+    display: inline-block;
+    padding: 15px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s;
 }
-nav a:hover { border-bottom-color: #64ffda; color: #fff; text-decoration: none; }
 
-/* ========== 主内容 ========== */
-.container { max-width: 780px; margin: 0 auto; padding: 40px 20px 80px; }
-
-/* ========== 文章卡片 ========== */
-.post-list { list-style: none; }
-.post-item {
-  background: #fff; border-radius: 10px; padding: 28px 32px; margin-bottom: 20px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.06); transition: 0.2s;
+nav a:hover,
+nav a.active {
+    color: #667eea;
+    background: #f0f0ff;
 }
-.post-item:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); transform: translateY(-1px); }
-.post-item .date {
-  font-size: 0.85em; color: #6b7280; margin-bottom: 6px;
+
+/* 章节 */
+section {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
 }
-.post-item h2 { font-size: 1.3em; margin-bottom: 8px; }
-.post-item h2 a { color: #1a1a2e; }
-.post-item h2 a:hover { color: #2563eb; text-decoration: none; }
-.post-item .summary { color: #4b5563; font-size: 0.95em; }
 
-/* ========== 文章详情页 ========== */
-article { background: #fff; border-radius: 10px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
-article h1 { font-size: 1.8em; margin-bottom: 8px; }
-article .meta { color: #6b7280; font-size: 0.9em; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid #e5e7eb; }
-article p { margin-bottom: 1.2em; }
-article h2 { font-size: 1.35em; margin: 1.5em 0 0.5em; }
-article h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; }
-article ul, article ol { margin-bottom: 1.2em; padding-left: 1.5em; }
-article li { margin-bottom: 0.3em; }
-article blockquote {
-  border-left: 4px solid #2563eb; padding: 12px 20px; margin: 1.2em 0;
-  background: #f0f4ff; border-radius: 0 8px 8px 0;
+section h2 {
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #667eea;
+    display: inline-block;
 }
-article hr { border: none; border-top: 1px solid #e5e7eb; margin: 2em 0; }
 
-/* ========== 关于页面 ========== */
-.about-section { background: #fff; border-radius: 10px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
-.about-section h1 { font-size: 1.8em; margin-bottom: 20px; }
-.about-section p { margin-bottom: 1em; }
+section h3 {
+    color: #555;
+    margin: 15px 0 10px;
+}
 
-/* ========== 页脚 ========== */
+/* 武器分类卡片 */
+.weapon-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.category-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.category-card h3 {
+    color: #667eea;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.category-card ul {
+    list-style: none;
+}
+
+.category-card li {
+    padding: 5px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.category-card li:before {
+    content: "🔫";
+    position: absolute;
+    left: 0;
+}
+
+/* 模式分级 */
+.mode-tier {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-left: 4px solid #667eea;
+}
+
+.mode-tier h3 {
+    color: #667eea;
+    margin-top: 0;
+}
+
+.mode-tier p {
+    margin: 8px 0;
+}
+
+/* FAQ */
+.faq details {
+    margin-bottom: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.faq details:hover {
+    border-color: #667eea;
+}
+
+.faq summary {
+    font-weight: bold;
+    color: #333;
+    outline: none;
+}
+
+.faq details[open] {
+    background: #f8f9ff;
+    border-color: #667eea;
+}
+
+.faq details p {
+    margin-top: 10px;
+    color: #666;
+}
+
+/* 列表 */
+ul, ol {
+    margin-left: 20px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* 页脚 */
 footer {
-  text-align: center; padding: 30px 20px; color: #6b7280;
-  font-size: 0.85em; border-top: 1px solid #e5e7eb;
+    text-align: center;
+    padding: 30px;
+    background: #333;
+    color: #fff;
+    margin-top: 40px;
 }
 
-/* ========== 响应式 ========== */
-@media (max-width: 600px) {
-  header h1 { font-size: 1.6em; }
-  .post-item { padding: 20px; }
-  article { padding: 24px; }
+footer a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+/* 关于页面 */
+.profile-header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    color: white;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.info-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.info-card .number {
+    font-size: 2em;
+    font-weight: bold;
+    color: #667eea;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 30px;
+}
+
+.timeline:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #667eea;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.timeline-item:before {
+    content: "";
+    position: absolute;
+    left: -26px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #667eea;
+    border: 2px solid white;
+    box-shadow: 0 0 0 2px #667eea;
+}
+
+.timeline-item h4 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.timeline-item .date {
+    color: #999;
+    font-size: 0.9em;
+}
+
+/* 视频列表 */
+.video-list {
+    display: grid;
+    gap: 15px;
+}
+
+.video-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.video-item:hover {
+    background: #f0f0ff;
+    transform: translateX(5px);
+}
+
+.video-item .platform {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.85em;
+    margin-right: 15px;
+    min-width: 60px;
+    text-align: center;
+}
+
+.platform-youku {
+    background: #ff6600;
+    color: white;
+}
+
+.platform-iqiyi {
+    background: #00be06;
+    color: white;
+}
+
+.platform-bilibili {
+    background: #fb7299;
+    color: white;
+}
+
+.platform-17173 {
+    background: #e74c3c;
+}
+
+.platform-douyin {
+    background: #000;
+    color: white;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    nav a {
+        padding: 12px 15px;
+        font-size: 0.9em;
+    }
+
+    .weapon-categories {
+        grid-template-columns: 1fr;
+    }
 }
