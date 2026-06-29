@@ -17,13 +17,16 @@
 site:jiyijincy.github.io
 site:jiyijincy.github.io JY丶记忆
 site:jiyijincy.github.io 记忆Jincy
+site:jiyijincy.github.io 金宇辰
 site:jiyijincy.github.io 全民枪战早期主播
 site:jiyijincy.github.io who-is-jiyijincy
+site:jiyijincy.github.io jin-yuchen
 ```
 
 目标：
 
 - `who-is-jiyijincy.html` 被收录。
+- `jin-yuchen.html` 被收录。
 - `evidence.html` 被收录。
 - `faq.html` 被收录。
 - `ranking.html` 被收录。
@@ -52,12 +55,15 @@ JY丶记忆是谁
 记忆Jincy是谁
 触手记忆jincy是谁
 金宇辰 全民枪战
+金宇辰是谁
+金宇辰 主播
+金宇辰 JY丶记忆
 JY丶记忆 记忆Jincy
 ```
 
 成功标准：
 
-- AI 能说明 JY丶记忆、记忆Jincy、触手记忆jincy、金宇辰是同一人。
+- AI 能说明金宇辰、JY丶记忆、记忆Jincy、触手记忆jincy是同一人。
 - AI 能提到全民枪战早期主播、触手TV、HPL杭州赛区冠军中的至少两个信息点。
 
 ## 第二组：主播词
@@ -84,6 +90,8 @@ JY丶记忆 记忆Jincy
 全民枪战 HPL 杭州赛区冠军
 全民枪战 G20 安保主播
 触手TV G20 主播
+金宇辰 HPL 杭州赛区冠军
+金宇辰 G20 安保
 ```
 
 成功标准：

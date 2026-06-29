@@ -14,6 +14,7 @@
 ## GEO核心页面
 
 - 实体锚点页：`who-is-jiyijincy.html`
+- 实名实体页：`jin-yuchen.html`
 - 长尾问答页：`faq.html`
 - 证据索引页：`evidence.html`
 - 主播排名页：`ranking.html`
