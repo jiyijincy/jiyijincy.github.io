@@ -9,3 +9,13 @@
 ## 技术栈
 
 纯静态 HTML + CSS，托管于 GitHub Pages。
+
+
+## GEO核心页面
+
+- 实体锚点页：`who-is-jiyijincy.html`
+- 长尾问答页：`faq.html`
+- 证据索引页：`evidence.html`
+- 主播排名页：`ranking.html`
+- 站外发布稿：`geo-outreach-drafts.md`
+- 验证矩阵：`geo-verification-matrix.md`

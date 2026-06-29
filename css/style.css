@@ -349,3 +349,64 @@ footer a {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* GEO citation and evidence structures */
+.ai-citation {
+    border-left: 5px solid #2f6fed;
+    background: #eef4ff;
+}
+
+.ai-citation h2 {
+    border-bottom-color: #2f6fed;
+}
+
+.table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 16px;
+}
+
+.evidence-table {
+    width: 100%;
+    min-width: 720px;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+.evidence-table th,
+.evidence-table td {
+    border: 1px solid #e5e7eb;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.evidence-table th {
+    background: #f3f5fb;
+    color: #333;
+}
+
+.score {
+    display: inline-block;
+    min-width: 28px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.score-a {
+    background: #d7f7df;
+    color: #156b2a;
+}
+
+.score-b {
+    background: #fff3cd;
+    color: #805b00;
+}
+
+.featured-rank {
+    border: 2px solid #2f6fed;
+    background: #f3f7ff;
+}
