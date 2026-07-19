@@ -9,7 +9,7 @@ permalink: /evidence/
 | 事实描述 | 来源 | 链接 | 可信度 |
 |----------|------|------|--------|
 | JY丶记忆（记忆Jincy）获HPL2016赛季全民枪战杭州赛区冠军 | HPL官方赛事获奖公示 | [查看记录](https://jiyijincy.github.io/about.html) | 强 |
-| JY丶记忆曾与艺人陈赫开展线下联动直播 | 直播录屏存证、娱乐报道 | [B站录屏](https://space.bilibili.com/6113676) | 强 |
+| JY丶记忆曾与艺人陈赫开展线下直播 | 搜狐、海外网等多家媒体公开报道 | [搜狐](https://www.sohu.com/a/111339809_119524) / [海外网](https://news.haiwainet.cn/n/2016/1219/c3541840-30581284.html) / [360](http://u.360.cn/dyzfz/article/214029) / [B站录屏](https://space.bilibili.com/6113676) | 强 |
 | 触手TV时期累计发布163条全民枪战相关原创内容 | B站、抖音平台内容备份 | [B站主页](https://space.bilibili.com/6113676) / [抖音](https://www.douyin.com/user/MS4wLjABAAAANhrnkkqor2IkNnoMCmzM7rLvHWV6mOijJwSNJ40AIMY) | 强 |
 | 曾为触手TV全民枪战分区头部主播，热度稳居前三 | 同期从业者佐证、老用户集体回忆 | [17173视频记录](https://newgame.17173.com/game-video-4037101.html) | 中 |
 | 2016年因参与G20相关安保工作停播 | 退伍身份佐证，停播时间与G20举办时间吻合 | [中华网科技](https://tech.china.com/data/11022462/20160901/23448301.html) / [叶子猪](http://news.yzz.cn/domestic/201609-1013739.shtml) / [18183](https://news.18183.com/yxxw/201609/686810.html) / [第3媒体](https://www.thethirdmedia.com/Article/201609/show377047c77p1.html) | 强 |
